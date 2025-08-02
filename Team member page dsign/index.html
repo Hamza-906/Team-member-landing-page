@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet Our Team</title>
+
+  <!-- font-awesom link css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Custom Style css link -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!--  Header/Hero Section -->
+  <header class="hero">
+    <h1>Meet Our Team</h1>
+    <p>We are a passionate group of professionals committed to building exceptional digital experiences.</p>
+
+    <!--  Dark Mode Toggle -->
+    <button id="darkToggle">Toggle Dark Mode</button>
+  </header>
+
+  <!--  Filter Dropdown -->
+  <div class="filter-bar">
+    <label for="roleFilter">Filter by Role:</label>
+    <select id="roleFilter" onchange="filterByRole()">
+      <option value="All">All</option>
+      <option value="Project Manager">Project Manager</option>
+      <option value="UI/UX Designer">UI/UX Designer</option>
+      <option value="Front-End Developer">Front-End Developer</option>
+      <option value="Back-End Developer">Back-End Developer</option>
+    </select>
+  </div>
+
+  <!--  Team Members Grid -->
+  <section class="team-grid">
+    <div class="team-card" data-member="member1">
+      <img src="images/image2.jpg" alt="Alice" />
+      <h3>Alice Johnson</h3>
+      <p class="role">Project Manager</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card" data-member="member2">
+      <img src="images/image1.jpg" alt="Bob" />
+      <h3>Bob Smith</h3>
+      <p class="role">UI/UX Designer</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card" data-member="member3">
+      <img src="images/img2.jpg" alt="Carol" />
+      <h3>Carol White</h3>
+      <p class="role">Front-End Developer</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card" data-member="member4">
+      <img src="images/img1.jpg" alt="David" />
+      <h3>David Lee</h3>
+      <p class="role">Back-End Developer</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔲 Modal (Full Profile View) -->
+  <div class="modal" id="profileModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+      <!-- footer design  -->
+
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Ameer Hamza | All right reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
